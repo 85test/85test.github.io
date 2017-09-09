@@ -12,28 +12,37 @@
 html {height: 100%; font-size: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
 body {margin: 0; height: 100%; background: rgb(255,255,255) url(about:blank) fixed; text-align: center;}
 body, button, input, select, submit, textarea {font: normal normal normal 16px 'School 85 NN Sans Web', sans-serif; color: rgb(0,0,0); margin: 0; padding: 0;}
-span, img {display: inline-block; vertical-align: top; text-align: left;}
-img {border: none;}
+span {display: inline-block; vertical-align: top; text-align: left;}
+img {display: inline-block; vertical-align: top; border: none;}
 
-#m {min-height: 100%; _height: 100%; min-width: 340px; padding: 0 10px; margin-bottom: -50px; /*background: silver*/}
+#m {min-height: 100%; _height: 100%; min-width: 230px; padding: 0 5px; margin-bottom: -50px; /*background: silver*/}
+@media (min-width: 360px) {#m {min-width: 340px; padding: 0 10px;}}
 @media (min-width: 1260px) {#m {width: 1086px; padding: 0 50px;}}
-#m .hrt {height: 155px;}
+#m .hrt {height: 132px;}
+@media (min-width: 360px) {#m .hrt {height: 155px;}}
 #m .hrb {height: 100px;}
 #w {width: 100%; min-width: 360px; background: rgb(231,231,231);}
 
-#t {position: absolute; left: 0; top: 0; width: 100%; min-width: 360px; background: rgb(70,85,121); text-align: right;}
+#t {position: absolute; left: 0; top: 0; width: 100%; min-width: 240px; _width:expression(document.documentElement.clientWidth<241?'240px':''); background: rgb(70,85,121); text-align: right;}
+@media (min-width: 360px) {#t {min-width: 360px;}}
 @media (min-width: 1260px) {#t {height: 125px;}}
-#t .tt {padding: 4px 0 0 95px; font-family: 'School 85 NN Serif Plus Web', serif; color: rgb(231,231,231); text-align: right;}
-@media (min-width: 1260px) {#t .tt {height: 69px; padding: 8px 0;}}
-#t .tt1, #t .tt2, #t .tt3 {text-align: right; margin-right: 10px;}
-#t .tt1 {font-size: 12px; line-height: 13px;}
+#t .tt {height: 61px; padding: 1px 5px 0 67px; font-family: 'School 85 NN Serif Plus Web', serif; color: rgb(231,231,231); text-align: right;}
+@media (min-width: 360px) {#t .tt {height: 81px; padding: 4px 10px 0 95px;}}
+@media (min-width: 1260px) {#t .tt {height: 69px; padding: 8px 20px 8px 145px;}}
+#t .tt1, #t .tt2, #t .tt3 {text-align: right;}
+#t .tt {font-size: 0; line-height: 0;}
+#t .tt1 {font-size: 9px; line-height: 11px;}
+#t .tt2 {font-size: 10px; line-height: 12px;}
+#t .tt3 {font-size: 8px; line-height: 11px;}
+@media (min-width: 360px) {
+#t .tt1 {font-size: 11px; line-height: 13px;}
 #t .tt2 {font-size: 15px; line-height: 17px;}
-#t .tt3 {font-size: 10px; line-height: 11px; margin-top: 4px;}
+#t .tt3 {font-size: 9px; line-height: 11px; margin-top: 3px;}
+}
 @media (min-width: 1260px) {
-#t .tt1, #t .tt2, #t .tt3 {text-align: right; margin-right: 20px;}
 #t .tt1 {font-size: 16px; line-height: 21px;}
-#t .tt2 {font-size: 24px; line-height: 32px; margin-top: -4px;}
-#t .tt3 {font-size: 14px; line-height: 19px;}
+#t .tt2 {font-size: 24px; line-height: 32px; margin-top: -3px;}
+#t .tt3 {font-size: 14px; line-height: 19px; margin-top: -1px;}
 }
 #t .tm {width: 100%; height: 40px; line-height: 40px; background: rgb(231,231,231); text-align: center;}
 #t .tmm {width: 100%; text-align: left;}
@@ -41,11 +50,12 @@ img {border: none;}
 #t .tmmb {width: 85px; text-align: center;}
 #t .tmmb .i {font-family: 'FontAwesome'; padding-right: 6px;}
 @media (min-width: 1260px) {#t .tmmb {display: none;}}
-#t .tl {position: absolute; left: 0; top: 0; text-align: center;}
-#t .tll {text-align: left;}
+#t .tl {position: absolute; left: 0; top: 0; width: 100%; min-width: 360px; text-align: center;}
+#t .tll {width: 100%; text-align: left;}
 @media (min-width: 1260px) {#t .tll {width: 1086px;}}
 #t .tll a {display: inline-block;}
-#t .tll a img {width: 85px; height: 85px;}
+#t .tll a img {width: 62px; height: 62px;}
+@media (min-width: 360px) {#t .tll a img {width: 85px; height: 85px;}}
 @media (min-width: 1260px) {#t .tll a img {width: 125px; height: 125px;}}
 </style>
 
